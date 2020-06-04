@@ -1,0 +1,753 @@
+* {
+    scroll-behavior: smooth;
+}
+
+a[href^="tel"] {
+    color: inherit;
+    /* Inherit text color of parent element. */
+    text-decoration: underline;
+    /* Remove underline. */
+    /* Additional css `propery: value;` pairs here */
+}
+
+.bg-dark {
+    background-color: #000 !important;
+}
+
+.bg-light {
+    background-color: #F0F0F0 !important;
+}
+
+.container-fluid {
+    max-width: 1500px;
+}
+
+/*LOGO*/
+
+.landing .logo img {
+    width: 90vw;
+}
+
+.navigation-primary .logo img {
+    width: 40vw;
+    padding-left: 2vw;
+}
+
+
+/* TYPOGRAPHY */
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding-bottom: 5pt;
+}
+
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+h5 {
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-menu li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+li .dropdown-menu {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.rundvisningcontent a {
+    color: black;
+    text-decoration: underline;
+}
+
+.rundvisningcontent a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.historiecontent a {
+    color: black;
+    text-decoration: underline;
+}
+
+.historiecontent a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.menneskernecontent a {
+    color: black;
+    text-decoration: underline;
+}
+
+.menneskernecontent a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+.bottomspace {
+    height: 300px;
+}
+
+.middlespace {
+    height: 10px;
+}
+
+.bottomspace-forside {
+    height: 120px;
+}
+
+footer .fa,
+.taprooms-content .fa {
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+footer .fab,
+.taprooms-content .fab {
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+footer .fa:hover {
+    opacity: 0.7;
+    color: white;
+    text-decoration: none;
+}
+
+.taprooms-content .fa:hover {
+    opacity: 0.7;
+    color: white;
+    text-decoration: none;
+}
+
+footer .fab:hover {
+    opacity: 0.7;
+    color: white;
+    text-decoration: none;
+}
+
+.taprooms-content .fab:hover {
+    opacity: 0.7;
+    color: white;
+    text-decoration: none;
+}
+
+
+footer .fa-facebook,
+.taprooms-content .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+footer .fa-instagram,
+.taprooms-content .fa-instagram {
+    background: #c11b94;
+    color: white;
+}
+
+footer .fa-untappd {
+    background: #FECC02;
+    color: brown;
+}
+
+footer .fa-beer {
+    background: #FFC107;
+    color: black;
+}
+
+footer ul li a {
+    color: white;
+    line-height: 30pt;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+/* ØL SITE VIEW */
+
+.ibu {
+    pointer-events: none;
+}
+
+.alcohol {
+    pointer-events: none;
+}
+
+.fa-untappd {
+    color: brown;
+}
+
+/*NAV MENU*/
+
+.nyhedsbrev-nav {
+    position: relative;
+    margin-top: 160px;
+}
+
+.nyhedsbrev-nav p {
+    max-width: 300px;
+}
+
+.main-menu {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-menu .main-menu {
+    opacity: 1;
+    visibility: visible;
+    background: black;
+}
+
+.main-menu {
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.main-menu .nav li a {
+    color: #FFF;
+}
+
+.dropdown-menu {
+    background: black;
+    padding-top: 0;
+}
+
+.main-menu .nav li {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+    -webkit-animation-timing-function: cubic-bezier(.45, .005, 0, 1);
+    -moz-animation-timing-function: cubic-bezier(.45, .005, 0, 1);
+    -o-animation-timing-function: cubic-bezier(.45, .005, 0, 1);
+    animation-timing-function: cubic-bezier(.45, .005, 0, 1);
+}
+
+.open-menu .main-menu .nav li {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform .2s, opacity .2s;
+    transition: transform .2s, opacity .2s;
+}
+
+.open-menu {
+    overflow: hidden;
+}
+
+.modal-open {
+    overflow: visible;
+}
+
+.open-menu .main-menu {
+    opacity: 1;
+    visibility: visible;
+    background: black;
+}
+
+.nav-button {
+    position: relative;
+    z-index: 1111;
+    height: 42px;
+    display: block;
+    width: 50px;
+    padding: 12px;
+}
+
+.nav-button #nav-icon3 {
+    width: 55px;
+    height: 22px;
+    display: inline-block;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-button #nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 80%;
+    background: #000;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.nav-button #nav-icon3 span:nth-child(1) {
+    top: 0;
+    left: 20%;
+}
+
+.nav-button #nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+    top: 7px;
+    width: 100%;
+    /* midterlinjen i burgermenuen er længere */
+}
+
+.nav-button #nav-icon3 span:nth-child(4) {
+    top: 14px;
+    left: 20%;
+}
+
+.open-menu #nav-icon3 span:nth-child(1) {
+    top: 9px;
+    width: 0;
+    left: 50%;
+}
+
+.open-menu #nav-icon3 span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: white;
+}
+
+.open-menu #nav-icon3 span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: white;
+}
+
+.open-menu #nav-icon3 span:nth-child(4) {
+    top: 9px;
+    width: 0;
+    left: 50%;
+    background: white;
+}
+
+.flex-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+#navbar-menu {
+    background-color: #333;
+    /* Black background color */
+    position: fixed;
+    /* Make it stick/fixed */
+    top: 0;
+    /* Stay on top */
+    width: 100%;
+    /* Full width */
+    transition: top 0.3s;
+    /* Transition effect when sliding down (and up) */
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.dropdown-item:hover {
+    color: #16181b;
+    text-decoration: underline;
+    background-color: #000;
+}
+
+.dropdown-toggle::after {
+    margin-left: .8em;
+}
+
+/*FORSIDE*/
+
+.modal-backdrop.show {
+    display: none;
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+.modal-dialog {
+    max-width: 100vw;
+    margin: auto;
+}
+
+.modal-content {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+.fade {
+    transition: opacity .5s linear;
+}
+
+
+.img-gradient,
+.img-gradient2,
+.img-gradient3,
+.img-gradient4 {
+    position: relative;
+    display: inline-block;
+}
+
+.img-gradient:after,
+.img-gradient2:after,
+.img-gradient3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: linear-gradient(to bottom, transparent 70%, black 100%);
+}
+
+.img-gradient img,
+.img-gradient2 img,
+.img-gradient3 img,
+.img-gradient4 img {
+    display: block;
+}
+
+.hero-headline {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+    text-transform: none;
+}
+
+.hero-subline {
+    font-size: 1.2rem;
+}
+
+/*HISTORIE*/
+
+.timeline h4 {
+    font-weight: 900;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    color: black;
+}
+
+/* TAPROOM CONTENT */
+
+.taprooms-content ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.taprooms-content ul li {
+    padding-bottom: 40px;
+}
+
+.taprooms-content ul li a {
+    color: black;
+}
+
+.nb-nav h2 {
+    font-size: 1.2rem;
+}
+
+/*PICTURES*/
+
+img {
+    width: 100%;
+}
+
+/*BUTTONS*/
+
+i {
+    vertical-align: middle;
+}
+
+button {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn-ut {
+    background-color: #FACD04;
+    border: none;
+    color: black;
+}
+
+.btn-lg {
+    font-size: 1.1rem;
+    padding: .5rem 2.5rem;
+}
+
+.btn-primary {
+    font-family: 'Source Sans Pro',
+        sans-serif;
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn-secondary {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    background-color: #FAD139;
+    border: none;
+    padding: 11px 30px;
+}
+
+.btn-secondary:hover {
+    background-color: #e2b200;
+    color: black;
+}
+
+/*KARRUSEL MED ØL*/
+
+
+/* Søgefelt */
+
+.searchbar {
+    padding: 6px;
+    font-size: 17px;
+    border: solid 1pt darkgrey;
+    border-radius: 4px;
+}
+
+/*MEDIA*/
+@media (min-width: 320px) {
+    .timeline h4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .timeline h4 {
+        font-size: 6rem;
+    }
+
+    .main-menu {
+        padding-left: 80px;
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .img-gradient:after {
+        background: linear-gradient(to right, transparent 0%, black 100%);
+    }
+
+    .img-gradient3:after {
+        background: linear-gradient(to left, transparent 55%, black 100%);
+    }
+
+    .timeline h4 {
+        font-size: 7.5rem;
+    }
+
+    .btn-primary {
+        font-family: 'Source Sans Pro',
+            sans-serif;
+        color: #fff;
+        border-color: #fff;
+        background: linear-gradient(to right, white 50%, transparent 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all .5s ease-out;
+    }
+
+    .btn-primary:hover {
+        color: #000;
+        background-color: transparent;
+        border-color: #fff;
+        background-position: left bottom;
+    }
+
+    .main-menu li {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+    }
+
+    li .dropdown-menu {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+
+    .main-menu {
+        padding-left: 120px;
+        padding-top: 40px;
+    }
+}
+
+#year-number h4 {
+    position: sticky;
+    top: 0;
+}
+
+@media (min-width: 1200px) {
+    .timeline h4 {
+        font-size: 9.5rem;
+    }
+
+    .container {
+        max-width: 1300px;
+    }
+
+    .mt-xl-5 {
+        margin-top: 6rem !important;
+    }
+
+    .main-menu li {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+
+    li .dropdown-menu {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    .nyhedsbrev-nav {
+        margin-top: 200px;
+    }
+}
+
+article div {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+article div:hover {
+    box-shadow: 6px 6px 10px 0px rgba(75, 75, 75, 0.2);
+    /*    transition: box-shadow 0.3s ease-in-out;*/
+}
+
+article a {
+    color: black;
+}
+
+article a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+#myModal {
+    display: block !important;
+    top: -100vh;
+    transition: .45s ease all;
+}
+
+#myModal.loadet {
+    top: 0;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    padding: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.da-lang {
+    text-decoration: underline;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 15px auto;
+    flex-wrap: wrap;
+}
+
+.search-wrapper .search-term {
+    border: 1px solid #843415;
+    flex-grow: 1;
+    min-width: 150px;
+    padding: 15px 0;
+    color: black;
+    font-size: 18px;
+    background-color: #ffffff;
+    transition: .35s all;
+}
+
+.search-wrapper .search-term.active,
+.search-wrapper .search-term:hover {
+    background-color: #843415;
+    color: white;
+}
